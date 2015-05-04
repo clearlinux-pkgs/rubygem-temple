@@ -1,0 +1,1 @@
+pushd %{buildroot}%{gem_dir}/gems/temple-0.7.6 && rake -I.:lib test && popd
