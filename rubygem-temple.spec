@@ -4,7 +4,7 @@
 #
 Name     : rubygem-temple
 Version  : 0.7.7
-Release  : 9
+Release  : 10
 URL      : https://rubygems.org/downloads/temple-0.7.7.gem
 Source0  : https://rubygems.org/downloads/temple-0.7.7.gem
 Summary  : No detailed summary available
@@ -53,7 +53,7 @@ fi
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
-pushd %{buildroot}%{gem_dir}/gems/temple-0.7.6 && rake -I.:lib test && popd
+pushd %{buildroot}%{gem_dir}/gems/temple-* && rake -I.:lib test && popd
 
 
 %files
